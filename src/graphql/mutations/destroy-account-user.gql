@@ -1,0 +1,11 @@
+#import '../fragments/account-user'
+
+mutation destroyAccountUserMutation(
+  $id: ID
+) {
+  destroyAccountUser(
+    id: $id
+  ) {
+    ...accountUser
+  }
+}

@@ -1,0 +1,21 @@
+#import '../fragments/template-field-allowed-value'
+#import '../fragments/template-field-allowed-value/client'
+#import '../fragments/template-field-allowed-value/template-field'
+
+mutation createTemplateFieldAllowedValueMutation (
+  $clientId: ID
+  $templateFieldId: ID
+  $allowedValue: String
+  $equivalentValue: String
+) {
+  createTemplateFieldAllowedValue (
+    clientId: $clientId
+    templateFieldId: $templateFieldId
+    allowedValue: $allowedValue
+    equivalentValue: $equivalentValue
+  ) {
+    ...templateFieldAllowedValue
+    ...templateFieldAllowedValueClient
+    ...templateFieldAllowedValueTemplateField
+  }
+}

@@ -1,0 +1,35 @@
+#import '../fragments/client-vendor'
+#import '../fragments/client-vendor/vendor'
+
+mutation createClientVendorMutation (
+  $type: String
+  $clientId: ID
+  $code: String
+  $name: String
+  $address: String
+  $phone: String
+  $vendorPhone: String
+  $description: String
+  $email: String
+  $title: String
+  $firstName: String
+  $lastName: String
+) {
+  createClientVendor (
+    type: $type
+    clientId: $clientId
+    code: $code
+    name: $name
+    address: $address
+    phone: $phone
+    vendorPhone: $vendorPhone
+    description: $description
+    email: $email
+    title: $title
+    firstName: $firstName
+    lastName: $lastName
+  ) {
+    ...clientVendor
+    ...clientVendorVendor
+  }
+}

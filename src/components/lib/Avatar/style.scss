@@ -1,0 +1,20 @@
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &.small {
+    width: 60px;
+    height: 60px;
+  }
+
+  &.circle {
+    border-radius: 120px;
+  }
+
+  > img {
+    display: block;
+    height: 60px;
+  }
+}

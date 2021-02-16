@@ -1,0 +1,11 @@
+mutation destroyClientVendorMutation (
+  $id: ID
+) {
+  destroyClientVendor (
+    id: $id
+  ) {
+    id
+    clientId
+    vendorId
+  }
+}

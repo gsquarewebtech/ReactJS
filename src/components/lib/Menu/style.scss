@@ -1,0 +1,12 @@
+.menu {
+  > ul {
+    display: flex;
+    list-style: none;
+
+    > li {
+      > a {
+        padding: 8px 16px;
+      }
+    }
+  }
+}

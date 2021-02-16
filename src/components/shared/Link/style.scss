@@ -1,0 +1,27 @@
+li {
+  > a {
+    &.icon-left {
+      > i {
+        margin-top: 1px;
+        margin-right: 5px;
+      }
+    }
+
+    &.icon-right {
+      > i {
+        margin-top: 1px;
+        margin-left: 5px;
+
+        &:hover{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+a {
+  > &.disabled {
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,121 @@
+.login {
+  background: $gradient-blue;
+  padding: 10px;
+
+  .logout {
+    display: flex;
+    justify-content: flex-end;
+
+    > button{
+      font-size: 10px;
+    }
+  }
+
+  > .content {
+    flex: 1;
+    max-width: 900px;
+    margin: auto;
+
+    > .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      align-items: center;
+      font-weight: 300;
+      color: #ffffff;
+
+      > h1 {
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+
+      > nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 13px;
+
+        > p {
+          font-weight: 300;
+        }
+
+        > .line {
+          background-color: rgba(255, 255, 255, 0.3);
+          width: 20px;
+          height: 1px;
+          margin: 0px 15px;
+        }
+
+        > .actions {
+          > .action {
+            > a {
+              font-weight: 600;
+              font-size: 16px;
+              color: #ffffff;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > .middle {
+      display: flex;
+
+      > .message {
+        flex: 1;
+        padding: 20px 80px 0px 0px;
+
+        p {
+          font-size: 48px;
+          font-weight: 200;
+          color: #ffffff;
+        }
+      }
+
+      > .form {
+        flex: 1;
+
+        > form {
+          background-color: #ffffff;
+          padding: 80px 40px 40px 40px;
+          border-radius: 4px;
+          margin-bottom: 25px;
+
+          > p {
+            font-size: 13px;
+          }
+        }
+
+        > .form-bottom {
+          font-weight: 200;
+          font-size: 13px;
+          text-align: center;
+          color: #ffffff;
+
+          a {
+            font-weight: 600;
+            color: #ffffff;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    > .footer {
+      padding-top: 60px;
+
+      > .login-logo {
+        > .logo {
+          height: 90px;
+        }
+      }
+    }
+  }
+}

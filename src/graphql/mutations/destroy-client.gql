@@ -1,0 +1,7 @@
+#import '../fragments/client'
+
+mutation destroyClientMutation($id: ID) {
+  destroyClient(id: $id) {
+    ...client
+  }
+}

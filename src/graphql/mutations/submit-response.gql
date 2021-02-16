@@ -1,0 +1,11 @@
+#import '../fragments/questionnaire-request'
+
+mutation submitResponseMutation(
+  $id: ID
+) {
+  submitResponse(
+    id: $id
+  ) {
+    ...questionnaireRequest
+  }
+}

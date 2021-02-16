@@ -1,0 +1,169 @@
+.response-rates-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+
+  tr:nth-child(odd) {
+    td {
+      background-color: $inputBackground;
+    }
+  }
+
+  th, td {
+    padding: 5px;
+    text-align: left;
+    text-align: left;
+
+    &.center {
+      text-align: center;
+    }
+
+    &.small {
+      width: 130px;
+    }
+
+    &.input {
+      width: 90px;
+
+      > .form-input {
+        > .input {
+          border-radius: 0px;
+          background-color: transparent;
+
+          &.number,
+          &.datepicker {
+            > input {
+              background-color: transparent;
+              width: 95px;
+              height: auto;
+              padding: 5px;
+              border: 1px solid #d4d4d4;
+            }
+          }
+        }
+      }
+    }
+
+    &.date {
+      width: 95px;
+    }
+
+    &.action {
+      width: 65px;
+      text-align: center;
+
+      > button {
+        background-color: $main;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 20px;
+        font-family: inherit;
+        color: $white;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &.discount {
+      position: relative;
+
+      > .symbol {
+        position: absolute;
+        top: 10px;
+        left: 80px;
+      }
+    }
+
+    input {
+      display: block;
+      background-color: transparent;
+      width: 100%;
+      padding: 5px;
+      border: none;
+      border: 1px solid #d4d4d4;
+      font-family: inherit;
+    }
+  }
+}
+
+.specialty-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+
+  > h3 {
+    > i {
+      font-size: 13px;
+      vertical-align: middle;
+      margin-left: 5px;
+
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+
+  > div {
+    > .specialty-template {
+      margin-top: -40px;
+    }
+  }
+}
+
+.exception-section {
+  > h3 {
+    > i {
+      font-size: 13px;
+      vertical-align: middle;
+      margin-left: 5px;
+
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.questionnaire-info {
+  padding: 20px 0px;
+  border-bottom: 1px solid #eee;
+}
+
+.questionnaire-total-score {
+  display: flex;
+  justify-content: flex-end;
+
+  > .score-box {
+    display: flex;
+    flex-direction: column;
+    background-color: $main;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: $white;
+
+    > .text {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    > .value {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+}
+
+.form-submit {
+  margin-top: 10px;
+
+  &.summary-button-editable {
+    margin-top: -40px;
+  }
+}
+
+.rate-date-input-group {
+  width: 50%;
+}

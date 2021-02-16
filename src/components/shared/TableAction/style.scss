@@ -1,0 +1,28 @@
+.table-action {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px;
+
+  > .search {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    > .input {
+      margin-bottom: 0px;
+      border-bottom: none;
+    }
+  }
+
+  > .buttons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      border-radius: 20px;
+    }
+  }
+}

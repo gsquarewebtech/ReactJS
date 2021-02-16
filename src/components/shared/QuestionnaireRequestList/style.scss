@@ -1,0 +1,44 @@
+.item-action {
+  &.vendor-action {
+    display: flex;
+    width: 90px;
+
+    > .field-data{
+      justify-content: center;
+    }
+  }
+}
+
+.questionnaire-request-list-view {
+  > .item {
+    > .item-field {
+      .status-badge {
+        text-transform: capitalize;
+
+        &.received {
+          background-color: $light-blue;
+        }
+
+        &.seen {
+          background-color: $orange;
+        }
+
+        &.partially, &.in.process {
+          background-color: $blue;
+        }
+
+        &.completed {
+          background-color: $green;
+        }
+
+        &.expired {
+          background-color: $red;
+        }
+
+        &.disqualified {
+          background-color: $dark;
+        }
+      }
+    }
+  }
+}

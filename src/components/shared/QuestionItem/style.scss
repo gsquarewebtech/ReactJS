@@ -1,0 +1,118 @@
+.question-item {
+  padding: 40px 0px;
+  border-bottom: 1px solid #eeeeee;
+
+  &:first-child {
+    padding: 0 0 40px 0;
+  }
+
+  &:last-child {
+    border: none;
+  }
+
+  > .question-item-header-required {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    > .question-item-number {
+      display: flex;
+      align-items: center;
+      background-color: $blue;
+      height: 30px;
+      padding: 5px 15px;
+      border-radius: 50px;
+      font-size: 12px;
+      color: $white;
+    }
+
+    > .red-asterisk {
+      color: $red;
+      font-size: 8px;
+      font-weight: 600;
+      margin-left: 5px;
+    }
+  }
+
+  > .question-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    > .question-item-number {
+      display: flex;
+      align-items: center;
+      background-color: $blue;
+      height: 30px;
+      padding: 5px 15px;
+      border-radius: 50px;
+      font-size: 12px;
+      color: $white;
+    }
+  }
+
+  > .question-item-question {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 20px 5px;
+  }
+
+  > .question-item-explanation {
+    margin-top: 20px;
+  }
+
+  > .question-item-submit-answer {
+    margin-top: 20px;
+  }
+
+  > .question-item-edit-score {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    > .score-input-form {
+      width: 180px;
+
+      > label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        color: $labelColor;
+      }
+
+      > .score-input {
+        display: flex;
+        background-color: $inputBackground;
+        border-radius: 20px;
+
+        > input {
+          background-color: transparent;
+          width: 90px;
+          height: 40px;
+          padding: 0px 20px;
+          border: none;
+          font-size: 13px;
+          font-family: inherit;
+        }
+
+        > button {
+          background-color: $main;
+          height: 40px;
+          padding: 0px 20px;
+          border: none;
+          border-radius: 20px;
+          font-size: 13px;
+          font-family: inherit;
+          color: $white;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

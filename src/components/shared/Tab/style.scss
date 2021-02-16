@@ -1,0 +1,43 @@
+.tab-view {
+  background-color: $white;
+
+  .tab-navs {
+    margin: 0px;
+    border-bottom: 1px solid #eee;
+
+    > li {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      cursor: pointer;
+      user-select: none;
+
+      &.active {
+        background-color: $main;
+        color: $white;
+
+        > a {
+          color: inherit;
+        }
+      }
+
+      > a {
+        display: block;
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  .tab-panes {
+    &.padded {
+      > .tab-pane {
+        padding: 15px;
+      }
+    }
+
+    > .tab-pane {
+      &.padded {
+        padding: 15px;
+      }
+    }
+  }
+}

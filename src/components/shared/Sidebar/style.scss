@@ -1,0 +1,109 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(60deg,#15c39a,#336CAF 60%);
+  width: 200px;
+  height: 100%;
+
+  > .sidebar-logo {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 20px 0px;
+
+    > .logo {
+      height: 100px;
+    }
+  }
+
+  > .sidebar-account {
+    margin: 20px 0px;
+
+    .account {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 152px;
+      padding: 10px 0px;
+
+      color: #fff;
+
+      > .username {
+        background-color: rgba(0, 0, 0, 0.08);
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding: 2px 20px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 100;
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      > .name {
+        width: 140px;
+        margin-bottom: 10px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      > .type {
+        background: #ffffff;
+        padding: 2px 20px;
+        border-radius: 20px;
+        font-size: 11px;
+        color: #26272d;
+      }
+    }
+  }
+
+  > .sidebar-menu {
+    flex: 1;
+
+    .menu {
+      display: flex;
+      padding: 10px 0px;
+
+      > ul {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        > li {
+          > a {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 200;
+            color: #fff;
+            transition: all 600ms ease;
+
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            &.logout {
+              cursor: pointer;
+            }
+
+            > i {
+              width: 25px;
+              font-size: 16px;
+              color: #e0e0e0;
+            }
+
+            > span {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

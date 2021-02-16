@@ -1,0 +1,21 @@
+#import '../fragments/template-field-mapping'
+#import '../fragments/template-field-mapping/client'
+#import '../fragments/template-field-mapping/template-field'
+
+mutation createTemplateFieldMappingMutation (
+  $clientId: ID
+  $templateFieldId: ID
+  $name: String
+  $isRequired: Boolean
+) {
+  createTemplateFieldMapping (
+    clientId: $clientId
+    templateFieldId: $templateFieldId
+    name: $name
+    isRequired: $isRequired
+  ) {
+    ...templateFieldMapping
+    ...templateFieldMappingClient
+    ...templateFieldMappingTemplateField
+  }
+}

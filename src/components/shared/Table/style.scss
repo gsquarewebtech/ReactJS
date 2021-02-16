@@ -1,0 +1,40 @@
+.table-view {
+  overflow-x: auto;
+
+  > table {
+    min-width: 100%;
+    border-collapse: collapse;
+
+    td {
+      padding: 5px 10px;
+      border-top: 1px solid #dee2e6;
+      font-size: 13px;
+
+      &.capitalize {
+        text-transform: capitalize;
+      }
+
+      &.centered {
+        text-align: center;
+      }
+    }
+
+    > thead {
+      > tr {
+        > td {
+          border-top: none;
+          border-bottom: 2px solid #dee2e6;
+          font-weight: 600;
+        }
+      }
+    }
+
+    tr {
+      &.has-error {
+        > td {
+          background-color: $lightRed;
+        }
+      }
+    }
+  }
+}

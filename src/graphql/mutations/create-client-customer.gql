@@ -1,0 +1,37 @@
+#import '../fragments/client-customer'
+
+mutation createClientCustomerMutation (
+  $clientId: ID
+  $name: String
+  $clientHq: String
+  $startDate: String
+  $clientTypeId: ID
+  $totalEmployees: Int
+  $totalMembers: Int
+  $totalAnnualRebates: Float
+  $currentPbm: String
+  $industryId: ID
+  $monthsOfData: Int
+  $formularyId: ID
+  $salesPerson: String
+  $otherInfo: String
+) {
+  createClientCustomer (
+    clientId: $clientId
+    name: $name
+    clientHq: $clientHq
+    startDate: $startDate
+    clientTypeId: $clientTypeId
+    totalEmployees: $totalEmployees
+    totalMembers: $totalMembers
+    totalAnnualRebates: $totalAnnualRebates
+    currentPbm: $currentPbm
+    industryId: $industryId
+    monthsOfData: $monthsOfData
+    formularyId: $formularyId
+    salesPerson: $salesPerson
+    otherInfo: $otherInfo
+  ) {
+    ...clientCustomer
+  }
+}

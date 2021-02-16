@@ -1,0 +1,26 @@
+// common pages styles
+@import '@screens/Login/style';
+@import '@screens/Register/style';
+@import '@screens/ForgotPassword/style';
+@import '@screens/Pages/style';
+@import '@screens/CreatePassword/style';
+@import '@screens/ChangePassword/style';
+
+// admin pages styles
+@import '@screens/Admin/Dashboard/style';
+@import '@screens/Admin/Users/style';
+@import '@screens/Admin/Clients/style';
+@import '@screens/Admin/Vendors/style';
+@import '@screens/Admin/DataLogic/style';
+@import '@screens/Admin/PriceLogic/style';
+@import '@screens/Admin/QuoteLogic/style';
+@import '@screens/Admin/RFPLogic/style';
+@import '@screens/Admin/Lists/style';
+
+// client pages styles
+
+// vendor pages styles
+@import '@screens/Vendor/RFPLogic/style';
+
+//
+@import '@screens/Test/style';

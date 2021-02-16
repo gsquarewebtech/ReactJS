@@ -1,0 +1,27 @@
+.tab-navs {
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+
+  margin-bottom: 40px;
+
+  > ul {
+    flex: 1;
+    display: flex;
+
+    > li {
+      flex: 1;
+      background-color: #f3f3f9;
+      margin-right: 5px;
+      padding: 10px 15px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      cursor: pointer;
+
+      &.active {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+}

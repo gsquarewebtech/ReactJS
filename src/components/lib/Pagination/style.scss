@@ -1,0 +1,70 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  &.centered {
+    > .pages {
+      justify-content: center;
+    }
+  }
+
+  > .pages {
+    display: flex;
+
+    > .page {
+      flex: none;
+      background-color: #ffffff;
+      margin-right: 6px;
+      width: 60px;
+      height: 30px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      &.active {
+        background-color: $blue;
+
+        > a {
+          color: $white;
+        }
+      }
+
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+        cursor: pointer;
+        box-shadow: 0px 1px 2px 0px rgba(10, 25, 39, 0.06);
+        user-select: none;
+      }
+    }
+
+    > .sizer {
+      display: flex;
+      align-items: center;
+      background-color: $white;
+      height: 30px;
+      padding: 0px 10px;
+      border-radius: 4px;
+
+      > select {
+        background-color: $inputBackground;
+        margin-right: 10px;
+        padding: 0px 10px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      > span {
+        font-size: 13px;
+      }
+    }
+  }
+}

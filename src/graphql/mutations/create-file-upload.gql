@@ -1,0 +1,11 @@
+mutation createFileUploadMutation(
+  $group: String
+  $accountId: ID
+  $file: Upload
+) {
+  createFileUpload(
+    group: $group
+    accountId: $accountId
+    file: $file
+  )
+}

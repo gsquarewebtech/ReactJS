@@ -1,0 +1,142 @@
+.list-view {
+  .item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    &.background-white {
+      background-color: $white;
+    }
+
+    &.border-bottom {
+      border-bottom: 1px solid #eee;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0px;
+    }
+  }
+
+  .item-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &.flex-none {
+      flex: 0;
+      flex-basis: 100px;
+    }
+
+    &.padded {
+      padding: 0px 20px;
+    }
+
+    &.center {
+      align-items: center;
+    }
+
+    &.item-avatar {
+      flex: 0;
+      padding: 0px 20px 0px 0px;
+
+      .avatar {
+        > img {
+          height: 50px;
+        }
+      }
+    }
+
+    &.proper-case {
+      > .field-data {
+        text-transform: capitalize;
+      }
+    }
+
+    &.right {
+      justify-content: flex-end;
+
+      > .field-data {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    &.item-action {
+      flex: none;
+
+      > .field-data {
+        display: flex;
+      }
+
+      a,
+      button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $gray;
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        padding: 0px;
+        border-radius: 20px;
+        font-size: 16px;
+        color: #a1a4b8;
+        transition: all 250ms ease-in-out;
+
+        &.blue {
+          background-color: $blue;
+          color: $white;
+          transition: all 100ms ease-in-out;
+        }
+
+        &.red {
+          background-color: $red;
+          color: $white;
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        &.with-text {
+          width: auto;
+          padding: 0px 20px;
+          font-size: 11px;
+        }
+      }
+    }
+
+    > .field-label {
+      margin-bottom: 5px;
+      font-size: 13px;
+      font-weight: 600;
+      font-style: italic;
+      color: #808080;
+    }
+
+    > .field-data {
+      display: flex;
+      align-items: center;
+      min-height: 24px;
+      font-size: 13px;
+    }
+
+    &.width-120 {
+      min-width: 120px;
+    }
+
+    &.width-150 {
+      min-width: 150px;
+    }
+
+    &.width-180 {
+      min-width: 180px;
+    }
+
+    &.width-200 {
+      min-width: 200px;
+    }
+  }
+}

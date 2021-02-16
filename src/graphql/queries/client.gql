@@ -1,0 +1,15 @@
+#import '../fragments/client'
+#import '../fragments/client/client-detail'
+#import '../fragments/client/client-customers'
+#import '../fragments/client/client-vendors'
+#import '../fragments/client/account-users'
+
+query clientQuery($id: ID) {
+  client(id: $id) {
+    ...client
+    ...clientClientDetail
+    ...clientClientCustomers
+    ...clientClientVendors
+    ...clientAccountUsers
+  }
+}

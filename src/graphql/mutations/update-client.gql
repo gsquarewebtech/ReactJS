@@ -1,0 +1,17 @@
+#import '../fragments/client'
+#import '../fragments/client/client-detail'
+
+mutation updateClientMutation(
+  $id: ID
+  $name: String
+  $clientDetail: UpdateClientDetailInput
+) {
+  updateClient(
+    id: $id
+    name: $name
+    clientDetail: $clientDetail
+  ) {
+    ...client
+    ...clientClientDetail
+  }
+}

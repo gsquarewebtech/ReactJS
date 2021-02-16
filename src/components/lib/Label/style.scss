@@ -1,0 +1,14 @@
+.label {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 12px;
+
+  &.centered {
+    text-align: center;
+  }
+
+  &.gray {
+    color: #696969;
+  }
+}

@@ -1,0 +1,11 @@
+#import '../user'
+#import '../user-type'
+
+fragment sessionUser on Session {
+  user {
+    ...user
+    userType {
+      ...userType
+    }
+  }
+}

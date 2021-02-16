@@ -1,0 +1,13 @@
+.field-action {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,13 @@
+#import '../fragments/client'
+#import '../fragments/client/client-detail'
+
+query clientsQuery (
+  $search: String
+) {
+  clients (
+    search: $search
+  ) {
+    ...client
+    ...clientClientDetail
+  }
+}

@@ -1,0 +1,9 @@
+#import '../fragments/user'
+#import '../fragments/user/user-type'
+
+query authQuery {
+  auth {
+    ...user
+    ...userUserType
+  }
+}

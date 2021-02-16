@@ -1,0 +1,6 @@
+query clientFormulariesQuery {
+  clientFormularies {
+    id
+    name
+  }
+}

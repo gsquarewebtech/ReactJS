@@ -1,0 +1,21 @@
+#import '../fragments/user'
+#import '../fragments/user/user-type'
+
+mutation createUser(
+  $username: String
+  $userTypeId: ID
+  $email: String
+  $firstName: String
+  $lastName: String
+) {
+  createUser(
+    username: $username
+    userTypeId: $userTypeId
+    email: $email
+    firstName: $firstName
+    lastName: $lastName
+  ) {
+    ...user
+    ...userUserType
+  }
+}

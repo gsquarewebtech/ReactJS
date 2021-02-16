@@ -1,0 +1,45 @@
+#import '../fragments/client-customer'
+#import '../fragments/client-customer/client-type'
+#import '../fragments/client-customer/industry'
+#import '../fragments/client-customer/formulary'
+
+mutation updateClientCustomerMutation (
+  $id: ID
+  $clientId: ID
+  $name: String
+  $clientHq: String
+  $startDate: String
+  $clientTypeId: ID
+  $totalEmployees: Int
+  $totalMembers: Int
+  $totalAnnualRebates: Float
+  $currentPbm: String
+  $industryId: ID
+  $monthsOfData: Int
+  $formularyId: ID
+  $salesPerson: String
+  $otherInfo: String
+) {
+  updateClientCustomer (
+    id: $id
+    clientId: $clientId
+    name: $name
+    clientHq: $clientHq
+    startDate: $startDate
+    clientTypeId: $clientTypeId
+    totalEmployees: $totalEmployees
+    totalMembers: $totalMembers
+    totalAnnualRebates: $totalAnnualRebates
+    currentPbm: $currentPbm
+    industryId: $industryId
+    monthsOfData: $monthsOfData
+    formularyId: $formularyId
+    salesPerson: $salesPerson
+    otherInfo: $otherInfo
+  ) {
+    ...clientCustomer
+    ...clientCustomerClientType
+    ...clientCustomerIndustry
+    ...clientCustomerFormulary
+  }
+}

@@ -1,0 +1,23 @@
+.notices {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.notice {
+  background-color: #34495e;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  &.green {
+    background-color: #49b18c;
+  }
+}

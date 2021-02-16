@@ -1,0 +1,4 @@
+fragment client on Client {
+  id
+  name
+}

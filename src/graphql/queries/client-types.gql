@@ -1,0 +1,6 @@
+query clientTypesQuery {
+  clientTypes {
+    id
+    name
+  }
+}

@@ -1,0 +1,46 @@
+
+.loader-a {
+  display: inline-block;
+  padding: 0px;
+  font-size: 0px;
+
+  span {
+    vertical-align: middle;
+    border-radius: 100%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 3px 2px;
+    animation: loader-a 0.8s linear infinite alternate;
+
+    &:nth-child(1) {
+      background: rgba(255, 255, 255, 0.6);
+      animation-delay: -1s;
+    }
+
+    &:nth-child(2) {
+      background: rgba(255, 255, 255, 0.8);
+      animation-delay: -0.8s;
+    }
+
+    &:nth-child(3) {
+      background: rgba(255, 255, 255, 1);
+      animation-delay: -0.26666s;
+    }
+
+    &:nth-child(4) {
+      background:rgba(255, 255, 255, 0.8);
+      animation-delay:-0.8s;
+    }
+
+    &:nth-child(5) {
+      background: rgba(255, 255, 255, 0.4);
+      animation-delay: -1s;
+    }
+  }
+}
+
+@keyframes loader-a {
+  from {transform: scale(0, 0);}
+  to {transform: scale(1, 1);}
+}

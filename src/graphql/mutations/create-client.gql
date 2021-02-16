@@ -1,0 +1,15 @@
+#import '../fragments/client'
+#import '../fragments/client/client-detail'
+
+mutation createClientMutation(
+  $name: String
+  $clientDetail: CreateClientDetailInput
+) {
+  createClient(
+    name: $name
+    clientDetail: $clientDetail
+  ) {
+    ...client
+    ...clientClientDetail
+  }
+}

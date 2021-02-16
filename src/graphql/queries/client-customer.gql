@@ -1,0 +1,13 @@
+#import '../fragments/client-customer'
+#import '../fragments/client-customer/client-type'
+#import '../fragments/client-customer/industry'
+#import '../fragments/client-customer/formulary'
+
+query clientCustomerQuery($id: ID) {
+  clientCustomer(id: $id) {
+    ...clientCustomer
+    ...clientCustomerClientType
+    ...clientCustomerIndustry
+    ...clientCustomerFormulary
+  }
+}
